@@ -7,11 +7,19 @@
         <title>Prime Factors</title>
         <link rel="stylesheet" href="styles/style.css">
     </head>
-    <body ng-app="">
-
+    <body ng-app="kitchsinkApp">
+        <nav>
+            <!--NAVLINKS HERE-->
+        </nav>
+        <main>
+            <div ng-view="">Loading...</div>
+        </main>
         <script src="lib/angular.min.js" charset="utf-8"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
-   
+        <script src="lib/angular-route.min.js"></script>
         <script src="js/app.js" charset="utf-8"></script>
+        <script src="js/primeFactorsController.js"></script>
+        <script src="js/triviaController.js"></script>
+        <script src="js/triviaService.js"></script>
+        <script src="js/primeFactorsService.js"></script>
     </body>
 </html>
