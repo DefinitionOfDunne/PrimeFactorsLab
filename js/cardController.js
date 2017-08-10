@@ -9,7 +9,6 @@ app.controller("cardController", function($scope, cardService) {
         var promise = cardService.getCardData();
         promise.then(function successCallback(response) {
             $scope.cardInfo = response.data;
-            console.log(response.data[0].artist);
         }, function errorCallback(response) {
         	alert("Please enter a valid Hearthstone card name.");
         });
