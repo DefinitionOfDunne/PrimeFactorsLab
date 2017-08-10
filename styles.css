@@ -75,7 +75,7 @@ label {
     text-align: center;
 }
 
-#primefactorDisplay {
+#primefactorDisplay, #hearthstoneInfo {
     text-align: center;
 }
 
@@ -98,4 +98,28 @@ main {
 }
 main > div {
     padding: 15px;
+}
+
+.primeFactors {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-right: 5px;
+    border: 2px solid #023E54;
+    font-size: 130%;
+    border-radius: 50%;
+}
+
+.primeFactors.ng-enter {
+    animation: bounceIn 1.5s;
+}
+
+.cardDisplay img.ng-enter {
+    animation: fadeInLeft 650ms;
+}
+
+.cardDisplay img.ng-leave {
+    animation: fadeOutRight 650ms;
 }

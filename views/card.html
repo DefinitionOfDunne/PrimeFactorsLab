@@ -1,11 +1,10 @@
-<h2>Hearthstone Card Search</h2>
-<form ng-submit="cardSearch(cardName)">
-    <input type="text" ng-model="cardName" placeholder="Enter a Hearthstone card...">
-    <button type="submit">Search For Card</button>
-</form>
-
-<div id="card-display">
-	
-	<img ng-src="{{cardInfo[0].imgGold}}"/>
-
+<div id="hearthstoneInfo">
+	<h2>Hearthstone Card Search</h2>
+	<form ng-submit="cardSearch(cardName)">
+	    <input type="text" ng-model="cardName" placeholder="Enter a Hearthstone card..."><br>
+	    <button type="submit">Search For Card</button>
+	</form>
+	<div class="cardDisplay">
+		<img ng-if="cardInfo" ng-src="{{cardInfo.imgGold}}"/>
+	</div>
 </div>
