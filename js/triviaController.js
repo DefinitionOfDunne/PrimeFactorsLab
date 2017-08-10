@@ -1,12 +1,16 @@
 var app = angular.module("kitchsinkApp");
 
-app.controller("triviaController", function($scope, triviaService) {
+app.controller("cardController", function($scope, cardService) {
 
-    $scope.triviaQuestions = [];
+    $scope.cardInfo = [];
 
-    var promise = triviaService.getTriviaData();
-    	promise.then(function(response) {
-        $scope.questions = response.data;
-    });
+    $scope.cardSearch = function(card) {
+        cardService.searchCard(card);
+        var promise = cardService.getCardData();
+        promise.then(function(response) {
+            $scope.cardInfo = response.data;
+            console.log(response.data[0].artist);
+        });
+    }
 
 });

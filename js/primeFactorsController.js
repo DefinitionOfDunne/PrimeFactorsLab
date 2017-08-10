@@ -1,13 +1,13 @@
-(function () {
+(function() {
 
-var app = angular.module("kitchsinkApp");
+    var app = angular.module("kitchsinkApp");
 
-app.controller("primeFactorsController", function ($scope, primeFactorsService) {
+    app.controller("primeFactorsController", function($scope, primeFactorsService) {
 
-	$scope.setFactors = function(num) {
-		$scope.factors = primeFactorsService.setPrimeFactors(num);
-	}
-})
+        $scope.setFactors = function(num) {
+            $scope.factors = primeFactorsService.setPrimeFactors(num);
+        }
+    })
 
 })();
 
