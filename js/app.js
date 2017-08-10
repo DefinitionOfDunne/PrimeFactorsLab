@@ -4,8 +4,8 @@
 
     app.config(function($routeProvider) {
 
-        $routeProvider.when("/trivia", {
-            templateUrl: "views/trivia.html",
+        $routeProvider.when("/hearthstone", {
+            templateUrl: "views/card.html",
             controller: "cardController"
         });
 
