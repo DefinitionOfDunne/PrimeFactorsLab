@@ -1,6 +1,6 @@
 (function() {
 
-    var app = angular.module("kitchsinkApp", ["ngRoute"]);
+    var app = angular.module("kitchsinkApp", ["ngRoute"], ['ngAnimate']);
 
     app.config(function($routeProvider) {
 
