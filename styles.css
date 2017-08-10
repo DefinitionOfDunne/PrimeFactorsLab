@@ -75,6 +75,10 @@ label {
     text-align: center;
 }
 
+#primefactorDisplay {
+    text-align: center;
+}
+
 #buttonDiv {
 	list-style: none;
 	margin: 0 2px;

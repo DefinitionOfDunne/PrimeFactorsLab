@@ -1,9 +1,13 @@
-<p>Enter a Number: </p>
-<input type="number" ng-model="numToFactor" min=1 placeholder="Number must be greater than 0">
-<button type="button" ng-click="setFactors(numToFactor)">Get Prime Factors</button>
+<div id="primefactorDisplay">
+	<form ng-submit="setFactors(numToFactor)">
+	<h2>Enter a Number: </h2>
+	<input type="number" ng-model="numToFactor" min=2 placeholder="Enter number > 1. . ."><br>
+	<button type="submit">Get Prime Factors</button>
+	</form>
 
-<div id="outputDiv">
-	<h3>The prime factors of {{numToFactor}} are:</h3>
-	<!--USE CSS TO FORMAT AND ADD COMMAS TO ALL BUT LAST-CHILD-->
-	<p><span ng-repeat="factor in factors track by $index">{{factor}} </span></p>
+	<div id="outputDiv">
+		<h3>The prime factors of {{numToFactor}} are:</h3>
+		<!--USE CSS TO FORMAT AND ADD COMMAS TO ALL BUT LAST-CHILD-->
+		<p><span ng-repeat="factor in factors track by $index">{{factor}} </span></p>
+	</div>
 </div>
