@@ -1,24 +1,10 @@
 <div id="hearthstoneInfo">
-	<h2>Hearthstone Card Search</h2>
-	<form ng-submit="cardSearch(cardName)">
-	    <input type="text" ng-model="cardName" placeholder="Enter a Hearthstone card..."><br>
-	    <button type="submit">Search For Card</button>
-	</form>
-	<div class="searchedCard">
-		<div class="cardDisplay">
-			<img ng-if="cardInfo" ng-src="{{cardInfo.imgGold}}"/>
-		</div>
-		<div class="cardInfoDisplay">
-			<h2 ng-if="cardInfo">{{cardInfo.name}}</h2>
-			<ul ng-if="cardInfo" id="cardStats">
-				<li ng-if="cardInfo.attack"><label class="listItem">Attack:</label> {{cardInfo.attack}}</li>
-				<li ng-if="cardInfo.health"><label class="listItem">Health:</label> {{cardInfo.health}}</li>
-				<li><label class="listItem">Cost:</label> {{cardInfo.cost}}</li>
-				<li><label class="listItem">Rarity:</label> {{cardInfo.rarity}}</li>
-				<li><label class="listItem">Set:</label> {{cardInfo.cardSet}}</li>
-				<li><label class="listItem">Artist:</label> {{cardInfo.artist}}</li>
-				<li><label class="listItem">Flavor:</label> {{cardInfo.flavor}}</li>
-			</ul>
-		</div>
-	</div>
+    <h2>Hearthstone Card Search</h2>
+    <form ng-submit="cardSearch(cardName)">
+        <input type="text" ng-model="cardName" placeholder="Enter a Hearthstone card...">
+        <br>
+        <button type="submit">Search For Card</button>
+    </form>
+    <card-image></card-image>
+    <card-details></card-details>
 </div>

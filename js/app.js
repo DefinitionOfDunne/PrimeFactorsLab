@@ -18,7 +18,22 @@
             template: "Please select an option from the links above."
         });
 
-
     });
+
+    app.directive("cardDetails", function() {
+
+        return {
+            templateUrl: 'views/details.html',
+            replace: true
+        }
+    })
+
+    app.directive("cardImage", function() {
+
+        return {
+            templateUrl: 'views/cardpic.html',
+            replace: true
+        }
+    })
 
 })();
