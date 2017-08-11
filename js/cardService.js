@@ -5,14 +5,10 @@ app.service('cardService', function($http) {
     var cardName;
 
     this.searchCard = function(input) {
-
         cardName = input;
-
     }
 
     this.getCardData = function() {
-
-
         var url = "https://omgvamp-hearthstone-v1.p.mashape.com/cards/" + cardName;
 
         var promise = $http({
@@ -24,8 +20,6 @@ app.service('cardService', function($http) {
             }
 
         });
-
         return promise;
-        console.log(promise);
     }
 });
