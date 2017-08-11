@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html {
     background-color: #023E54;
     background: linear-gradient(325deg, rgba(2,62,84, 0.75), rgba(16,170,192, 0.55));
     min-height: 700px;
     min-width: 580px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     /*more info on how scrollbar trick works: 
     https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll;*/
     overflow: scroll;
@@ -54,6 +54,7 @@ button {
     color: #023E54;
     width: calc(45% - 20px);
     height: 50px;
+    border: 1px solid;
     border-radius: 15px;
     line-height: 50px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -111,6 +112,7 @@ main {
 }
 main > div {
     padding: 15px;
+    text-align: center;
 }
 
 .primeFactors {
